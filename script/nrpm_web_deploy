@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo parameter: $0
+echo parameter: $1
+echo parameter: $2
+echo parameter: $3
+
