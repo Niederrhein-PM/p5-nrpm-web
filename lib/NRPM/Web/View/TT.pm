@@ -1,4 +1,5 @@
 package NRPM::Web::View::TT;
+# ABSTRACT: NRPM-Web Template Toolkit View
 use Moose;
 
 extends 'Catalyst::View::TT';

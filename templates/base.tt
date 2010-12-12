@@ -17,7 +17,11 @@
 			<@ content @>
 		</div>
 		<div id="footer">
-			niederrhein.pm | <a href="https://github.com/Niederrhein-PM/p5-nrpm-web">Repository of the site</a> | <a href="/impressum">Impressum</a>
+			niederrhein.pm |
+			<a href="http://www.twitter.com/niederrheinpm">Twitter</a> |
+			<a href="http://www.facebook.com/pages/Niederrhein-Perl-Mongers/176634792354842">Facebook</a> |
+			<a href="https://github.com/Niederrhein-PM/p5-nrpm-web">Quellcode dieser Seite</a> |
+			<a href="/impressum">Impressum</a>
 		</div>
 	</body>
 </html>

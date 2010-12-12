@@ -24,7 +24,7 @@ sub index :Chained('base') :PathPart('') :Args(0) {
 
 sub default :Chained('base') :PathPart('') :Args {
     my ( $self, $c ) = @_;
-	$c->stash->{title} = 'Hups, haben wir nicht gefunden';
+	$c->stash->{title} = 'Nicht gefunden!';
     $c->response->status(404);
 }
 
