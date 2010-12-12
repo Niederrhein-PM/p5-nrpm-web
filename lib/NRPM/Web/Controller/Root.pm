@@ -1,4 +1,5 @@
 package NRPM::Web::Controller::Root;
+# ABSTRACT: Root Controller for NRPM::Web
 use Moose;
 use namespace::autoclean;
 
@@ -6,46 +7,26 @@ BEGIN { extends 'Catalyst::Controller' }
 
 __PACKAGE__->config(namespace => '');
 
-=head1 NAME
-
-NRPM::Web::Controller::Root - Root Controller for NRPM::Web
-
 =head1 DESCRIPTION
 
 Root Controller
 
-=head1 METHODS
-
-=head2 index
-
-The root page (/)
-
 =cut
 
-sub index :Path :Args(0) {
+sub base :Chained('/') :PathPart('') :CaptureArgs(0) {
     my ( $self, $c ) = @_;
-
-    # Hello World
-    $c->response->body( "niederrhein.pm.org" );
 }
 
-=head2 default
+sub index :Chained('base') :PathPart('') :Args(0) {
+	my ( $self, $c ) = @_;
+	$c->stash->{title} = 'Willkommen bei den Perl Mongers im Niederrhein';
+}
 
-Standard 404 error page
-
-=cut
-
-sub default :Path {
+sub default :Chained('base') :PathPart('') :Args {
     my ( $self, $c ) = @_;
-    $c->response->body( 'Page not found' );
+	$c->stash->{title} = 'Hups, haben wir nicht gefunden';
     $c->response->status(404);
 }
-
-=head2 end
-
-Attempt to render a view, if needed.
-
-=cut
 
 sub end : ActionClass('RenderView') {}
 

@@ -1,0 +1,12 @@
+#header {
+	width: 90%;
+	padding: 15px;
+	background-color: #d0ffd0;
+}
+
+#footer {
+	width: 90%;
+	padding: 15px;
+	background-color: #d0ffd0;
+	text-align: right;
+}

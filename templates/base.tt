@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<@ PROCESS head.tt @>
+	<body>
+		<div id="header">
+			<div class="title">niederrhein.pm</div>
+			<div class="menu">
+				<a href="/">Home</a> |
+				<a href="/treffen">Treffen</a> |
+				<a href="/talks">Talks</a> |
+				<a href="/links">Links</a> |
+				<a href="/region">Region</a>
+			</div>
+		</div>
+		<div id="content">
+			<@ content @>
+		</div>
+		<div id="footer">
+			niederrhein.pm | <a href="https://github.com/Niederrhein-PM/p5-nrpm-web">Repository of the site</a> | <a href="/impressum">Impressum</a>
+		</div>
+	</body>
+</html>
