@@ -1,7 +1,11 @@
-<div>
+<div class="info">
 	Tut mir leid, wir haben die Seite nicht gefunden!
 </div>
-<div>
+<div class="info">
 	Derzeit wird die Seite umgestellt, in kürze werden alle Links wieder funktionieren und alle Daten wieder auf den
 	gleichen URLs erreichbar sein.
+</div>
+<div class="info">
+	Die alte Webseite ist vollst&auml;ndig unter <a href="https://github.com/Niederrhein-PM/historical-niederrhein.pm.org">https://github.com/Niederrhein-PM/historical-niederrhein.pm.org</a> gesichert.
+	Ihre gew&uuml;nschte Datei w&auml;re dann hier: <a href="https://github.com/Niederrhein-PM/historical-niederrhein.pm.org/blob/master/<@ c.req.path @>"><@ c.req.path @></a>
 </div>

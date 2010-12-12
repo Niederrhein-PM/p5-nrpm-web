@@ -28,6 +28,16 @@ sub default :Chained('base') :PathPart('') :Args {
     $c->response->status(404);
 }
 
+sub impressum :Chained('base') :Args(0) {
+	my ( $self, $c ) = @_;
+	$c->stash->{title} = 'Impressum';
+}
+
+sub region :Chained('base') :Args(0) {
+	my ( $self, $c ) = @_;
+	$c->stash->{title} = 'Die Region die unsere Perl Mongers Gruppe einschliesst';
+}
+
 sub end : ActionClass('RenderView') {}
 
 __PACKAGE__->meta->make_immutable;
