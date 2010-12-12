@@ -24,6 +24,27 @@ sub index :Chained('base') :PathPart('') :Args(0) {
 
 sub default :Chained('base') :PathPart('') :Args {
     my ( $self, $c ) = @_;
+	
+	my %old_urls = (
+		'region/region.html' => $c->uri_for('region'),
+		'links/links.html' => $c->uri_for('links'),
+		'links/book.html' => $c->uri_for('links'),
+		'links/binary.html' => $c->uri_for('links'),
+		'links/editors.html' => $c->uri_for('links'),
+		'links/tutorial.html' => $c->uri_for('links'),
+		'talks/talks.html' => $c->uri_for(''),
+		'talks/col.html' => $c->uri_for(''),
+		'talks/col.html' => $c->uri_for(''),
+		'treffen/treffen.html' => $c->uri_for('treffen'),
+		'treffen/200101de.html' => $c->uri_for('treffen/20010118'),
+		'treffen/200102de.html' => $c->uri_for('treffen/20010216'),
+		'treffen/200111de.html' => $c->uri_for('treffen/20011100'),
+		'treffen/200201de.html' => $c->uri_for('treffen/20020100'),
+		'treffen/200202de.html' => $c->uri_for('treffen/20020221'),
+	);
+	
+	return $c->response->redirect($old_urls{$c->req->path}, 301) if ($old_urls{$c->req->path});
+	
 	$c->stash->{title} = 'Nicht gefunden!';
     $c->response->status(404);
 }

@@ -7,8 +7,6 @@ extends 'Catalyst::Model';
 use IO::All -utf8;
 use YAML qw(LoadFile);
 
-use Data::Dumper;
-
 sub treffen {
 	my ( $self, $name ) = @_;
 	
