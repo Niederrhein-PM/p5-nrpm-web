@@ -9,4 +9,6 @@
 	<meta name="robots" content="INDEX,FOLLOW" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="/static/css/nrpm.css" type="text/css">
+	<script src="/static/js/jquery.js"></script>
+	<script src="/static/js/nrpm.js"></script>
 </head>

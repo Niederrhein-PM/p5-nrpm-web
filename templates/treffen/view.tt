@@ -1,0 +1,6 @@
+<h1><@ treffen.title @></h1>
+
+<h2>Wann: <@ treffen.date @></h2>
+<h2>Wo: <@ treffen.location @></h2>
+
+<@ treffen.html @>

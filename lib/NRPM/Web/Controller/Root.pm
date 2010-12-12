@@ -33,6 +33,11 @@ sub impressum :Chained('base') :Args(0) {
 	$c->stash->{title} = 'Impressum';
 }
 
+sub links :Chained('base') :Args(0) {
+	my ( $self, $c ) = @_;
+	$c->stash->{title} = 'Empfohlene Links';
+}
+
 sub region :Chained('base') :Args(0) {
 	my ( $self, $c ) = @_;
 	$c->stash->{title} = 'Die Region die unsere Perl Mongers Gruppe einschliesst';

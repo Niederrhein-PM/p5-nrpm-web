@@ -15,6 +15,7 @@ extends 'Catalyst';
 __PACKAGE__->config(
     name => 'NRPM::Web',
     disable_component_resolution_regex_fallback => 1,
+	encoding => 'UTF-8',
 );
 
 # Start the application

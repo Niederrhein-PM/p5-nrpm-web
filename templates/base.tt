@@ -8,20 +8,25 @@
 			<div class="menu">
 				<a href="/">Home</a> |
 				<a href="/treffen">Treffen</a> |
-				<a href="/talks">Talks</a> |
 				<a href="/links">Links</a> |
-				<a href="/region">Region</a>
+				<a href="/region">Region</a> |
+				<a href="http://widget.mibbit.com/?settings=1c154d53c72ad8cfdfab3caa051b30a2&server=irc.perl.org&channel=%23niederrhein.pm&noServerTab=false&noServerNotices=true&noServerMotd=true&autoConnect=true">Webchat</a>
 			</div>
 		</div>
 		<div id="content">
 			<@ content @>
 		</div>
-		<div id="footer">
-			niederrhein.pm |
-			<a href="http://www.twitter.com/niederrheinpm">Twitter</a> |
-			<a href="http://www.facebook.com/pages/Niederrhein-Perl-Mongers/176634792354842">Facebook</a> |
-			<a href="https://github.com/Niederrhein-PM/p5-nrpm-web">Quellcode dieser Seite</a> |
-			<a href="/impressum">Impressum</a>
+		<div id="footer">		
+			<div class="left">
+				
+			</div>
+			<div class="right">
+				niederrhein.pm |
+				<a href="http://www.twitter.com/niederrheinpm">Twitter</a> |
+				<a href="http://www.facebook.com/pages/Niederrhein-Perl-Mongers/176634792354842">Facebook</a> |
+				<a href="https://github.com/Niederrhein-PM/p5-nrpm-web">Quellcode dieser Seite</a> |
+				<a href="/impressum">Impressum</a>
+			</div>
 		</div>
 	</body>
 </html>

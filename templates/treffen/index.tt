@@ -1,0 +1,22 @@
+<h1>Die Treffen der Niederrhein Perl Mongers</h1>
+
+<h2>Liste der bisherigen und angekündigten Treffen:</h2>
+
+<table>
+	<tr>
+		<th>Datum</th>
+		<th>Ort</th>
+		<th>Titel</th>
+	</tr>
+<@ FOR treffen IN all_treffen @>
+	<tr>
+		<td><@ treffen.date @></th>
+		<td><@ treffen.location @></th>
+		<td><a href="<@ c.uri_for('/treffen', treffen.key ) @>"><@ treffen.title @></a></th>
+	</tr>
+<@ END @>
+</table>
+
+<p>Bisher trag man sich gemeinsam mit der Krefelder LUG regelm&auml;&szlig;ig am 1. Montag in ungeraden Monaten in Krefeld im Latina.
+Mehr Infos gibt es <a href="http:www.lug-kr.de/cgi-bin/lugwiki.pl?ExternesTreff">hier</a>. Dieses Treffen existiert noch, wir werden
+aber dauerhaft ein eigenes Treffen auf die Beine stellen (wo nat&uuml;rlich jeder herzlich eingeladen ist, egal welche Usergroup).</p>
