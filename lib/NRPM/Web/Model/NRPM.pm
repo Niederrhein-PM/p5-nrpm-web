@@ -5,7 +5,7 @@ use namespace::autoclean;
 extends 'Catalyst::Model';
 
 use IO::All -utf8;
-use YAML qw(LoadFile);
+use CPANDB { show_progress => 1 };
 
 sub treffen {
 	my ( $self, $name ) = @_;
@@ -33,5 +33,13 @@ sub get_treffen_data {
 		return $treffen;
 	}
 }
+
+sub distributions {
+	my ( $self ) = @_;
+	my @AUTHORS = qw( GETTY ELIZABETH );
+	my $result = CPANDB::Distribution->select('where author in ( ' . join( ', ', map { '?' } @AUTHORS ) . ' ) order by uploaded desc', @AUTHORS);
+	return $result;
+}
+
 
 1;

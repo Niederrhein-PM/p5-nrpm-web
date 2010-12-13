@@ -1,0 +1,5 @@
+<h1><@ title @></h1>
+
+<ol>
+	<li><a href="<@ c.uri_for('/perl/cpan') @>">CPAN Distributionen</a></li>
+</ol>

@@ -2,6 +2,7 @@ package NRPM::Web::Controller::Root;
 # ABSTRACT: Root Controller for NRPM::Web
 use Moose;
 use namespace::autoclean;
+use utf8;
 
 BEGIN { extends 'Catalyst::Controller' }
 

@@ -1,0 +1,7 @@
+<h1><@ title @></h1>
+<ul>
+<@ FOR dist IN all_distributions @>
+	<li><@ dist.uploaded @> <b><a href="http://search.cpan.org/dist/<@ dist.distribution @>"><@ dist.distribution @></a></b>
+		<b><@ dist.version @></b> (<a href="http://search.cpan.org/~<@ dist.author @>"><@ dist.author @></a>)</li>
+<@ END @>
+</ul>

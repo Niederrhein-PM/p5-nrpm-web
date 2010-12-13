@@ -10,6 +10,7 @@
 				<a href="/treffen">Treffen</a> |
 				<a href="/links">Links</a> |
 				<a href="/region">Region</a> |
+				<a href="/perl/cpan">CPAN</a> |
 				<a href="http://widget.mibbit.com/?settings=1c154d53c72ad8cfdfab3caa051b30a2&server=irc.perl.org&channel=%23niederrhein.pm&noServerTab=false&noServerNotices=true&noServerMotd=true&autoConnect=true">Webchat</a>
 			</div>
 		</div>
@@ -17,8 +18,7 @@
 			<@ content @>
 		</div>
 		<div id="footer">		
-			<div class="left">
-				
+			<div class="left">				
 			</div>
 			<div class="right">
 				niederrhein.pm |
