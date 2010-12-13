@@ -6,6 +6,7 @@ extends 'Catalyst::Model';
 
 use IO::All -utf8;
 use CPANDB { show_progress => 1 };
+use YAML qw( LoadFile );
 
 sub treffen {
 	my ( $self, $name ) = @_;
