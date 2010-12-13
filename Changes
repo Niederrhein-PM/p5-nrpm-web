@@ -1,8 +1,10 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+	- Bugfix for Treffen page
 
 0.007     2010-12-13 02:19:39 Europe/Berlin
+	- Added CPAN distributions list
 
 0.006     2010-12-12 21:45:17 Europe/Berlin
 
