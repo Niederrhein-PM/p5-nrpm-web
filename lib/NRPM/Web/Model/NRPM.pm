@@ -37,7 +37,7 @@ sub get_treffen_data {
 
 sub distributions {
 	my ( $self ) = @_;
-	my @AUTHORS = qw( GETTY ELIZABETH );
+	my @AUTHORS = qw( GETTY ELIZABETH RIBASUSHI );
 	my $result = CPANDB::Distribution->select('where author in ( ' . join( ', ', map { '?' } @AUTHORS ) . ' ) order by uploaded desc', @AUTHORS);
 	return $result;
 }
