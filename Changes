@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.008     2010-12-13 02:38:57 Europe/Berlin
 	- Bugfix for Treffen page
 
 0.007     2010-12-13 02:19:39 Europe/Berlin
