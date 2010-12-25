@@ -18,7 +18,7 @@ __PACKAGE__->config(
 	PRE_PROCESS => 'macros.tt',
 	WRAPPER => 'base.tt',
 	ENCODING => 'utf-8',
-	COMPILE_DIR => "/tmp/scc_template_cache_$<",
+	COMPILE_DIR => "/tmp/nrpm_web_template_cache_$<",
 	STASH => Template::Stash::XS->new,
 );
 
