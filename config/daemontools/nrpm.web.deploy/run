@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# daemontools run script for deploying new code version
+#
+eval $( perl -I/home/nrpm/perl5/lib/perl5 -Mlocal::lib=/home/nrpm/perl5 )
+
+exec 2>&1
+exec setuidgid nrpm \
+	perl -I/home/nrpm/deploy/p5-nrpm-web/lib \
+	/home/nrpm/deploy/p5-nrpm-web/script/nrpm_web_fastcgi.pl \
+	-p /home/nrpm/prod/nrpm.web.deploy.pid \
+	-l /home/nrpm/prod/nrpm.web.deploy.socket -n 5
